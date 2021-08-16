@@ -365,9 +365,9 @@ p {
 }
 
 /* State */
-[data-state='selected'] {
-	background: red;
-}
+/* [data-state='selected'] {
+	background: inherit;
+} */
 
 .calculator__check {
 	border: none;
