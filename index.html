@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | calculatorulator app</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="dark">
+		<div class="calculator container">
+			<div class="calculator__top">
+				<p class="calculator--title">calc</p>
+				<div class="calculator__toggle">
+					<div class="theme__numbers">
+						<span class="calculator--theme-num">1</span>
+						<span class="calculator--theme-num">2</span>
+						<span class="calculator--theme-num">3</span>
+					</div>
+					<div class="themey">
+						<span class="calculator--theme-text">Theme</span>
+						<div class="toggler">
+							<div id="dark" class="dark active themes toggley"></div>
+							<div id="light" class="light themes toggley"></div>
+							<div id="solar" class="solar themes toggley"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="calculator__display">0</div>
+
+			<div class="calculator__keys calculator__grid">
+				<button data-type="number" class="calculator__btn calculator__btn--text">7</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">8</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">9</button>
+				<button data-type="delete" class="calculator__btn calculator__delete">Del</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">4</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">5</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">6</button>
+				<button data-key="plus" data-type="operator" class="calculator__btn calculator__btn--text calculator__operator">+</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">1</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">2</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">3</button>
+				<button data-key="minus" data-type="operator" class="calculator__btn calculator__btn--text calculator__operator">-</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">.</button>
+				<button data-type="number" class="calculator__btn calculator__btn--text">0</button>
+				<button data-key="divide" data-type="operator" class="calculator__btn calculator__btn--text calculator__operator">/</button>
+				<button data-key="times" data-type="operator" class="calculator__btn calculator__btn--text calculator__operator">&times;</button>
+				<button class="calculator__btn calculator__reset">Reset</button>
+				<button data-type="equal" class="calculator__btn calculator__equals">=</button>
+			</div>
+		</div>
+
+		<div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a target="_blank" href="https://samadjei.com/">Sam Adjei</a>.</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>

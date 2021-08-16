@@ -1,0 +1,461 @@
+:root {
+	/* BACKGROUNDS*/
+
+	/* Theme 1 Backgrounds */
+	--background-1: #3a4764;
+	--background-2: #232c43;
+	--background-3: #182034;
+	--background-4: #242d44;
+	/* Theme 2 - Backgrounds */
+	--background-5: #e5e4e1;
+	--background-6: #d2cdcd;
+	--background-7: #eeeeee;
+	--background-8: #d2cdcd;
+	/* Theme 3 - Backgrounds */
+	--background-9: #17062a;
+	--background-10: #1e0936;
+	--background-11: #1e0936;
+	--background-12: #1e0936;
+
+	/* KEYS */
+
+	/* Theme 1 Keys */
+	/* Key text  */
+	--key-1: #434a59;
+	/* Key background and shadow */
+	--key-2: #eae3dc;
+	--key-3: #b3a497;
+	/* Delete and Reset button */
+	--key-4: #647198;
+	--key-5: #414e73;
+	/* Equals Button */
+	--key-6: #d03f2f;
+	--key-7: #93261a;
+	/* Reset/Equals text */
+	--key-8: #ffffff;
+	/* Body text */
+	--key-9: #ffffff;
+
+	/* Theme 2 Keys */
+	/* Key text  */
+	--key-10: #36362c;
+	/* Key background and shadow */
+	--key-11: #e5e4e1;
+	--key-12: #a79e91;
+	/* Delete and Reset button */
+	--key-13: #378187;
+	--key-14: #1b6066;
+	/* Equals Button */
+	--key-15: #c85402;
+	--key-16: #873901;
+	/* Reset/Equals text */
+	--key-17: #ffffff;
+	/* Body text */
+	--key-18: #36362c;
+
+	/* Theme 3 Keys */
+	/* Key text  */
+	--key-19: #ffe53d;
+	/* Key background and shadow */
+	--key-20: #331c4d;
+	--key-21: #881c9e;
+	/* Delete and Reset button */
+	--key-22: #56077c;
+	--key-23: #be15f4;
+	/* Equals Button */
+	--key-24: #00ded0;
+	--key-25: #6cf9f1;
+	/* Reset/Equals text */
+	--key-26: #ffffff;
+	--key-29: #1a2327;
+	/* Body text */
+	--key-27: #ffe53d;
+	/* Toggle Button  */
+	--key-28: #00ded0;
+
+	/* TEXT */
+
+	/* Theme 1 Text */
+	/* --text-1: #444b5a;
+	--text-2: #ffffff;
+	--text-body-1: #ffffff; */
+	/* Theme 2 Text */
+	/* --text-3: #35352c;
+	--text-4: #ffffff;
+	--text-body-2: #36362c; */
+
+	/* Theme 3 Text */
+	/* --text-5: #1b2428;
+	--text-6: #ffffff;
+	--text-body-3: #ffe53d; */
+
+	/* FONTS */
+	--main-font: 'Spartan', sans-serif;
+	--font-weight-700: 700;
+}
+
+.dark {
+	/* Backgrounds */
+	--main-bg: var(--background-1);
+	--toggle-bg: var(--background-2);
+	--screen-bg: var(--background-3);
+	--calculator-bg: var(--background-4);
+	/* Keys */
+	/* Key text  */
+	--key-text: var(--key-1);
+	/* Key background and shadow */
+	--key-bg: var(--key-2);
+	--key-bg-shadow: var(--key-3);
+	/* Delete and Reset button */
+	--key-delete: var(--key-4);
+	--key-delete-shadow: var(--key-5);
+	--key-reset-text: var(--key-17);
+
+	/* Equals Button */
+	--key-equals: var(--key-6);
+	--key-equals-shadow: var(--key-7);
+	--key-equals-text: var(--key-8);
+	/* Toggle Button */
+	--key-toggle: var(--key-6);
+	/* Body text  */
+	--text-body: var(--key-9);
+}
+.light {
+	/* Backgrounds */
+	--main-bg: var(--background-5);
+	--toggle-bg: var(--background-6);
+	--screen-bg: var(--background-7);
+	--calculator-bg: var(--background-8);
+	/* Keys */
+	/* Key text  */
+	--key-text: var(--key-10);
+	/* Key background and shadow */
+	--key-bg: var(--key-11);
+	--key-bg-shadow: var(--key-12);
+	/* Delete and Reset button */
+	--key-delete: var(--key-13);
+	--key-delete-shadow: var(--key-14);
+	--key-reset-text: var(--key-17);
+	/* Equals Button */
+	--key-equals: var(--key-15);
+	--key-equals-shadow: var(--key-16);
+	--key-equals-text: var(--key-17);
+	/* Toggle Button */
+	--key-toggle: var(--key-6);
+	/* Body text  */
+	--text-body: var(--key-18);
+}
+.solar {
+	/* Backgrounds */
+	--main-bg: var(--background-9);
+	--toggle-bg: var(--background-10);
+	--screen-bg: var(--background-11);
+	--calculator-bg: var(--background-12);
+	/* Keys */
+	/* Key text  */
+	--key-text: var(--key-19);
+	/* Key background and shadow */
+	--key-bg: var(--key-20);
+	--key-bg-shadow: var(--key-21);
+	/* Delete and Reset button */
+	--key-delete: var(--key-22);
+	--key-delete-shadow: var(--key-23);
+	--key-reset-text: var(--key-17);
+	/* Equals Button */
+	--key-equals: var(--key-24);
+	--key-equals-shadow: var(--key-25);
+	--key-equals-text: var(--key-29);
+	/* Toggle Button */
+	--key-toggle: var(--key-28);
+	/* Body text  */
+	--text-body: var(--key-19);
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+
+	font-size: 62.5%;
+}
+
+body {
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-700);
+	background: var(--main-bg);
+	color: var(--text-body);
+	font-size: 16px;
+	/* Animation during background change */
+	transition: background 400ms ease-in-out, color 1000ms ease-in-out;
+	height: 100vh;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	font-size: 3.2rem;
+}
+
+.container {
+	width: 54rem;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	overflow: hidden;
+	padding-top: 9.6rem;
+}
+
+/* Text */
+.calculator--title {
+	color: var(--text-body);
+}
+
+.calculator--theme-num {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: center;
+	color: var(--text-body);
+}
+
+.calculator__btn--text {
+	font-weight: var(--font-weight-700);
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	text-align: center;
+	letter-spacing: -0.533333px;
+	color: var(--key-text);
+}
+
+.calculator--theme-text {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: var(--text-body);
+	margin-right: 2.1rem;
+}
+
+.theme__numbers {
+	display: grid;
+	grid-gap: 1.1rem;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: flex-start;
+	margin-left: 6.5rem;
+}
+
+.calculator__display {
+	text-align: right;
+	background: var(--screen-bg);
+	height: 12.8rem;
+	width: 100%;
+	border-radius: 1rem;
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-700);
+	font-size: 48px;
+	line-height: 54px;
+	/* identical to box height */
+	letter-spacing: -0.8px;
+	color: var(--text-body);
+	padding: 3.8rem 3.2rem;
+	margin-top: 3.2rem;
+	margin-bottom: 2.4rem;
+}
+
+.calculator__keys {
+	background: var(--calculator-bg);
+	width: 100%;
+	height: 48rem;
+	border-radius: 1rem;
+	padding: 3.2rem 3.2rem 3.2rem 3rem;
+}
+
+.calculator__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-self: center;
+	align-items: center;
+	grid-gap: 1rem;
+}
+
+.calculator__btn {
+	width: 10.1rem;
+	height: 6.4rem;
+	cursor: pointer;
+	background: var(--key-bg);
+	border: none;
+	border-radius: 1rem;
+	box-shadow: inset 0px -4px 0px var(--key-bg-shadow);
+	text-transform: uppercase;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calculator__toggle {
+	display: flex;
+	align-items: center;
+}
+
+.calculator__reset {
+	grid-column: span 2;
+	background: var(--key-delete);
+	box-shadow: inset 0px -4px 0px var(--key-delete-shadow);
+
+	/* width: 22.7rem; */
+	width: 100%;
+	height: 6.4rem;
+	color: var(--key-reset-text);
+	font-weight: var(--font-weight-700);
+
+	font-size: 20px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.333333px;
+}
+
+.calculator__equals {
+	/* width: 227px; */
+	width: 100%;
+	height: 64px;
+	background: var(--key-equals);
+	box-shadow: inset 0px -4px 0px var(--key-equals-shadow);
+	grid-column: span 2;
+	color: var(--key-equals-text);
+	font-weight: var(--font-weight-700);
+
+	font-size: 20px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.333333px;
+}
+
+.calculator__delete {
+	background: var(--key-delete);
+	box-shadow: inset 0px -4px 0px var(--key-delete-shadow);
+	color: var(--key-reset-text);
+
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.333333px;
+}
+
+/* State */
+[data-state='selected'] {
+	background: red;
+}
+
+.calculator__check {
+	border: none;
+	outline: none;
+}
+
+.calculator__toggle {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	justify-content: space-between;
+	max-width: 14.4rem;
+}
+
+.themey {
+	display: flex;
+	align-items: center;
+}
+
+.toggler {
+	width: 7.1rem;
+	height: 2.6rem;
+	border-radius: 1.3rem;
+	background: var(--toggle-bg);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.themes {
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.active {
+	background: var(--key-toggle);
+}
+
+@media screen and (max-width: 52rem) {
+	.container {
+		width: 54rem;
+		padding-top: 2.8rem;
+	}
+
+	.calculator__display {
+		/* width: 32.7rem; */
+		width: 100%;
+		height: 8.8rem;
+		border-radius: 1rem;
+		font-size: 3.2rem;
+		line-height: 3.6rem;
+		letter-spacing: -0.533333px;
+		padding: 2.6rem 2.4rem;
+	}
+
+	.calculator__keys {
+		height: 48rem;
+		padding: 2.4rem;
+	}
+
+	.calculator__btn {
+		width: 6rem;
+		height: 6.4rem;
+	}
+
+	.calculator__btn--text {
+		font-size: 2.8rem;
+		line-height: 3.1rem;
+		letter-spacing: -0.466667px;
+	}
+
+	.calculator__reset,
+	.calculator__equals {
+		width: 100%;
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		letter-spacing: -0.266667px;
+	}
+}
+
+.attribution {
+	font-size: 1.5rem;
+	text-align: center;
+	padding-top: 3rem;
+}
+.attribution a {
+	color: var(--text-body);
+}
